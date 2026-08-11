@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0c0f14" />
+    <title>Monthly Flyers | East Side Liquor Co</title>
+    <meta
+      name="description"
+      content="Monthly flyers and in-store promotions at East Side Liquor Co in Vernon, BC."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="age-gate" data-age-gate role="dialog" aria-modal="true" aria-labelledby="age-title">
+      <div class="age-card">
+        <p class="age-kicker">East Side Liquor Co</p>
+        <h2 id="age-title">Are you 21 or older?</h2>
+        <p class="age-copy">You must be of legal drinking age to enter this site.</p>
+        <div class="age-actions">
+          <button type="button" class="btn btn-primary" data-age-yes>Yes, I’m 21+</button>
+          <button type="button" class="btn btn-ghost" data-age-no>No, take me back</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-shell">
+      <header class="header" data-header>
+        <div class="container header-inner">
+          <a class="brand" href="index.html" aria-label="East Side Liquor Co"
+            >East Side <span>Liquor Co</span></a
+          >
+          <nav class="nav nav-desktop" aria-label="Primary">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link is-active" href="flyers.html">Flyers</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="visit.html">Visit</a>
+            <a class="btn btn-primary" href="tel:+12502606606">Call</a>
+          </nav>
+          <button
+            class="menu-btn"
+            type="button"
+            data-menu-btn
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Open menu"
+          >
+            <span></span>
+          </button>
+        </div>
+        <div class="container mobile-panel" id="mobile-nav" data-mobile-panel>
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link is-active" href="flyers.html">Flyers</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="visit.html">Visit</a>
+          <a class="btn btn-primary" href="tel:+12502606606">Call (250) 260-6606</a>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <section class="container page-hero">
+          <div>
+            <span class="section-label">Promotions</span>
+            <h1 class="page-title">Monthly flyers.</h1>
+            <p class="page-lead">
+              Review our current in-store promotions and browse previous monthly flyers. New offers
+              are added regularly.
+            </p>
+          </div>
+        </section>
+
+        <section class="section specials" id="current">
+          <div class="container">
+            <div>
+              <span class="section-label">Current month</span>
+              <h2 class="section-title">August 2026.</h2>
+              <p class="section-lead">
+                Our latest flyer will appear here once published. In the meantime, visit us for
+                current pricing and availability.
+              </p>
+            </div>
+
+            <article class="flyer-feature">
+              <div class="flyer-feature__media" data-flyer-slot>
+                <img
+                  src="images/flyers/2026-08-august.jpg"
+                  alt="August 2026 flyer"
+                  data-flyer-img
+                />
+                <div class="flyer-fallback">
+                  <span class="flyer-status">Coming soon</span>
+                  <strong>August 2026 flyer</strong>
+                  <p>This month’s flyer is being prepared and will be posted shortly.</p>
+                </div>
+              </div>
+              <div class="flyer-feature__copy">
+                <p class="special-tag">Current flyer</p>
+                <h3>August 2026 promotions</h3>
+                <p>
+                  Once available, this flyer will highlight selected beer, wine, cooler, and spirits
+                  offers. Availability may vary — our team will be glad to assist you in store.
+                </p>
+                <div class="ctas">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-flyer-open
+                    data-src="images/flyers/2026-08-august.jpg"
+                    data-caption="August 2026 Promotions"
+                    disabled
+                  >
+                    Coming soon
+                  </button>
+                  <a class="btn btn-ghost" href="index.html#specials">View current deals</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section why" id="archive">
+          <div class="container">
+            <div>
+              <span class="section-label">Flyer archive</span>
+              <h2 class="section-title">Previous months.</h2>
+              <p class="section-lead">
+                Past flyers will be listed here for reference as they become available.
+              </p>
+            </div>
+
+            <div class="specials-grid flyer-grid">
+              <article class="special-card" data-flyer-slot>
+                <div class="flyer-thumb">
+                  <img src="images/flyers/2026-07-july.jpg" alt="July 2026 flyer" data-flyer-img />
+                  <div class="flyer-fallback">
+                    <span class="flyer-status">Coming soon</span>
+                    <strong>July 2026</strong>
+                  </div>
+                </div>
+                <div class="flyer-card-body">
+                  <p class="special-tag">July 2026</p>
+                  <h3>July promotions</h3>
+                  <button
+                    type="button"
+                    class="btn btn-ghost btn-sm"
+                    data-flyer-open
+                    data-src="images/flyers/2026-07-july.jpg"
+                    data-caption="July 2026 Promotions"
+                    disabled
+                  >
+                    Coming soon
+                  </button>
+                </div>
+              </article>
+
+              <article class="special-card" data-flyer-slot>
+                <div class="flyer-thumb">
+                  <img src="images/flyers/2026-06-june.jpg" alt="June 2026 flyer" data-flyer-img />
+                  <div class="flyer-fallback">
+                    <span class="flyer-status">Coming soon</span>
+                    <strong>June 2026</strong>
+                  </div>
+                </div>
+                <div class="flyer-card-body">
+                  <p class="special-tag">June 2026</p>
+                  <h3>June promotions</h3>
+                  <button
+                    type="button"
+                    class="btn btn-ghost btn-sm"
+                    data-flyer-open
+                    data-src="images/flyers/2026-06-june.jpg"
+                    data-caption="June 2026 Promotions"
+                    disabled
+                  >
+                    Coming soon
+                  </button>
+                </div>
+              </article>
+
+              <article class="special-card">
+                <div class="flyer-thumb flyer-thumb--static">
+                  <div class="flyer-fallback is-shown">
+                    <span class="flyer-status">Stay tuned</span>
+                    <strong>More flyers ahead</strong>
+                  </div>
+                </div>
+                <div class="flyer-card-body">
+                  <p class="special-tag">Upcoming</p>
+                  <h3>New months soon</h3>
+                  <a class="btn btn-ghost btn-sm" href="visit.html">Visit the store</a>
+                </div>
+              </article>
+            </div>
+
+            <aside class="stay-tuned" aria-label="Stay tuned">
+              <p class="special-tag">Updates</p>
+              <h3>Stay tuned for more.</h3>
+              <p>
+                New flyers and seasonal promotions are added throughout the year. Check back soon,
+                follow our in-store boards, or call us for the latest offers.
+              </p>
+              <div class="ctas">
+                <a class="btn btn-primary" href="visit.html">Plan your visit</a>
+                <a class="btn btn-ghost" href="tel:+12502606606">Call (250) 260-6606</a>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div>
+            <p class="footer-brand">East Side Liquor Co</p>
+            <p class="footer-tag">Twenty years serving Vernon, BC</p>
+          </div>
+          <div>
+            <p class="footer-label">Visit</p>
+            <p>4209 27 St</p>
+            <p>Vernon, BC V1T 4Y3</p>
+            <a class="phone" href="tel:+12502606606">(250) 260-6606</a>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/eastsideliquorcompany/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@eastsideliquorcompany</a
+            >
+          </div>
+          <div>
+            <p class="footer-label">Explore</p>
+            <nav class="footer-links" aria-label="Footer">
+              <a href="index.html">Home</a>
+              <a href="flyers.html">Flyers</a>
+              <a href="about.html">About</a>
+              <a href="visit.html">Visit</a>
+            </nav>
+          </div>
+        </div>
+        <div class="container footer-bottom">
+          <p>Must be 21+ to purchase alcohol. Please drink responsibly.</p>
+          <div class="footer-meta">
+            <p>© 2026 East Side Liquor Co Company</p>
+            <p class="site-credit">
+              Site by
+              <a
+                href="https://www.instagram.com/kartikarora003/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Kartik</a
+              >
+              ·
+              <a
+                href="https://www.instagram.com/kartikarora003/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >@kartikarora003</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="flyer-lightbox" class="lightbox" hidden>
+      <button class="lightbox__close" id="lightbox-close" type="button" aria-label="Close">
+        &times;
+      </button>
+      <img id="lightbox-img" src="" alt="Flyer" />
+      <p id="lightbox-caption" class="lightbox__caption"></p>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/flyers.js"></script>
+  </body>
+</html>
