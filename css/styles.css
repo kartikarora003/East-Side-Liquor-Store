@@ -465,7 +465,7 @@ iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center 22%;
   transform: scale(1.08) translate3d(0, var(--hero-shift, 0px), 0);
   will-change: transform;
   animation: drift 22s ease-in-out infinite alternate;
@@ -2235,6 +2235,22 @@ iframe {
   color: var(--parchment-muted);
   font-size: 1.08rem;
   font-weight: 500;
+}
+
+.visit-storefront {
+  margin-top: 2rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #12161d;
+}
+
+.visit-storefront img {
+  display: block;
+  width: 100%;
+  max-height: min(52vh, 520px);
+  object-fit: cover;
+  object-position: center 28%;
 }
 
 .story {
