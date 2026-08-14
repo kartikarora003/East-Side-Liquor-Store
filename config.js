@@ -1,14 +1,19 @@
 window.STORE = {
   name: "East Side Liquor Co",
+  phone: "(250) 260-6606",
+  phoneHref: "tel:+12502606606",
   social: {
     instagram: "https://www.instagram.com/eastsideliquorcompany/",
     instagramHandle: "@eastsideliquorcompany",
   },
+
+  // Set to false when you drop this month’s flyer image in images/flyers/
+  flyerComingSoon: true,
+
   // Newest month first. Do not delete old lines — past months stay in the archive.
+  // Filename must include YYYY-MM (example: 2026-08-august.jpg)
   monthlyFlyers: [
-    "images/flyers/2026-08-august.jpg",
-    "images/flyers/2026-07-july.jpg",
-    "images/flyers/2026-06-june.jpg",
+    // "images/flyers/2026-08-august.jpg",
   ],
 
   loyaltyProgram: {
@@ -43,7 +48,8 @@ window.STORE = {
     {
       tag: "Veterans",
       title: "Veterans discount",
-      description: "Special discount for veterans — thank you for your service. Show your ID in store.",
+      description:
+        "Special discount for veterans — thank you for your service. Show your ID in store.",
       price: "Ask in store",
     },
   ],

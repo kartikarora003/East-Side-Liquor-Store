@@ -1,7 +1,19 @@
-Put flyer images in this folder:
+Packing House–style flyer setup
+================================
 
-  2026-08-august.jpg   ← current month (shown big on Flyers page)
-  2026-07-july.jpg
-  2026-06-june.jpg
+1. Drop the flyer image here using this name pattern:
+   2026-08-august.jpg
+   (must include YYYY-MM so the site can read the month)
 
-Then update the matching img src paths in flyers.html when you add a new month.
+2. In html/config.js:
+   - set flyerComingSoon: false
+   - add the path at the top of monthlyFlyers (newest first):
+
+   monthlyFlyers: [
+     "images/flyers/2026-08-august.jpg",
+     "images/flyers/2026-07-july.jpg",
+   ],
+
+3. Keep old lines in monthlyFlyers — past months stay in the archive.
+
+While flyerComingSoon is true (or the image is missing), the Flyers page shows Coming Soon.
