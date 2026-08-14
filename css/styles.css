@@ -804,7 +804,7 @@ iframe {
   box-shadow: var(--shadow);
 }
 
-/* Delivery — luxury panel */
+/* Delivery ? luxury panel */
 .delivery {
   position: relative;
   overflow: hidden;
@@ -1021,6 +1021,29 @@ iframe {
   grid-template-columns: 1.05fr 0.95fr;
   gap: 3rem;
   align-items: center;
+}
+
+.community-story {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: start;
+}
+
+.community-story__title {
+  max-width: 16ch;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+}
+
+.community-story__copy {
+  display: grid;
+  gap: 1.1rem;
+  color: var(--parchment-muted);
+  max-width: 40rem;
+}
+
+.community-story__copy .ctas {
+  margin-top: 0.5rem;
 }
 
 .community-years {
@@ -2135,7 +2158,7 @@ iframe {
 }
 
 .faq-item[open] summary::after {
-  content: "–";
+  content: "?";
 }
 
 .faq-item p {
@@ -2229,6 +2252,11 @@ iframe {
   color: var(--parchment);
 }
 
+.page-title--wide {
+  max-width: 18ch;
+  line-height: 0.98;
+}
+
 .page-lead {
   margin-top: 1.2rem;
   max-width: 36rem;
@@ -2281,6 +2309,11 @@ iframe {
   gap: 1.1rem;
   color: var(--parchment-muted);
   max-width: 40rem;
+}
+
+.story-close {
+  color: var(--cream);
+  font-weight: 600;
 }
 
 /* Footer */
@@ -2663,6 +2696,7 @@ body.age-locked {
   .faq-layout,
   .contact-layout,
   .community-layout,
+  .community-story,
   .delivery-layout,
   .payments-panel {
     grid-template-columns: 1fr;
@@ -3004,7 +3038,7 @@ body.age-locked {
   }
 }
 
-/* ===== Flyers page (Packing House�style) ===== */
+/* ===== Flyers page (Packing House?style) ===== */
 .section--flyer {
   padding-top: 1.5rem;
 }
